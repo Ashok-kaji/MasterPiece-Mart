@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+    
+}
+section{
+    background-color:#423e31;
+    color: white;
+    padding: 5rem 0;
+}
+.bg1{
+    background-image: url(bg-1.jpeg);
+
+}
+.bg2{
+    background-image: url(grpphoto.jpeg);
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 10rem;
+    font-family: 'Pacifico', cursive;
+
+}
+.text{
+  
+    font-size: 2rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.text1{
+    color: burlywood;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+}
+.container2{
+    background-color: #0c2626;
+}
+.text2{
+    color: #8c4026;
+}
+.bg2{
+    background-image: url(image3.jpeg);
+}
+.bg3{
+    background-image: url(grpphoto.jpeg);
+}
+.container3{
+    background-color: #26260c;
+}
+.text4{
+    color: rgb(241, 241, 171)    ;
+}
