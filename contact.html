@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+     <!-- font awesome -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+ <!-- navbar section -->
+
+ <div class="navbar">
+    <div class="nav-logo"><a href="Index.html">MasterPiece Mart</a></div>
+
+    <div class="search">
+      <input class="input-box" placeholder="Search MasterPiece Mart" />
+      <div class="search-icon">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </div>
+
+    <div class="shop-art"><a href="#"> Shop Art</a></div>
+
+    <div class="wishlist"><a href="#">Wishlist</a></div>
+
+    <div class="cart">
+      <a href="#"> Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+    </div>
+
+    <div class="login">
+      <a href="loginpage.html">Login</a> <i class="fa-solid fa-user"></i>
+    </div>
+  </div>
+</header>
+<section class="contact">
+    <div class="content">
+        <h2>Contact Us</h2>
+        <br> <br>
+        <p>Welcome to MASTERPIECE MART! <br>We're delighted to hear from you. Whether you have a question about our products, need assistance, or just want to say hello, we're here to help. Please use the information below to get in touch with us. </p><br>
+    </div>
+    <div class="container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>IIIT Lucknow <br> Chak Ganjaria, C. G. City <br>Lucknow – 226002</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>123-999-9999</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>masterpiecemart@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="contactForm" >
+            <form action="">
+                <h2>Send Message</h2>
+<br>
+                <div class="inputBox">
+                    <input type="text" name="" id="n1" required="required">
+                    <span> Full Name</span>
+                </div>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="" id="e1" required="required">
+                    <span> Email</span>
+                </div>
+<br>
+                <div class="inputBox">
+                   <textarea required="required"></textarea>
+                    <span> Type your Message...</span>
+                </div>
+
+                <div class="inputBox">
+                    <input type="submit" name="" value="Send" onClick="create_account()">
+                    
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="footbar">
+      <div class="description">
+        <div class="foot-logo"><a href="Index.html ">MasterPiece Mart</a></div>
+        <div class="desc">Masterpiece Mart is an online art gallery with a curated selection of original art for sale. Shop thousands of oil paintings, acrylics, watercolor paintings, mixed media art, and more. Contact us for a free art advisor consultation, and we’ll be happy to help you find your ideal artwork.</div>
+      </div>
+
+      <div class="links">
+
+        <a href="#">F&A</a>
+        <a href="#">Contact Us</a>
+        <a href="#">Returns</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Team Wizard</a>
+
+      </div>
+    </div>
+    <hr>
+                                               <!-- 2nd footer section -->
+    <div class="end">
+      <div class="end-content"> <br><br>PHONE <br> <br><br> 8825******</div>
+      <div class="end-content">  <br><br>EMAIL <br><br><br> teamwizard@pvt.ltd.in</div>
+      <div class="end-content"> SOCIAL MEDIA <br> <br> <a href="https://www.instagram.com/muskan_arts_0/?hl=en"><i class="fa-brands fa-instagram"></i></a> <br> <br> <a href="#"><i class="fa-brands fa-telegram"></i></a> <br><br> <a href="https://www.youtube.com/@muskanart3102"><i class="fa-brands fa-youtube"></i></a></div>
+      <div class="end-content">    </BR><a href="#">TERMS</a> <BR><BR> </BR> <a href="#">PRIVACY</a></div>
+      <div class="end-content"> <br><br><br> Copyright &#169; 2023</div>
+    </div>
+  </footer>
+<script>  
+    function create_account(){  
+
+    var n=document.getElementById("n1").value;  
+    var e=document.getElementById("e1").value;  
+   
+            var letters = /^[A-Za-z]+$/;  
+            var email_val = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;  
+
+    if(n==''||e==''){  
+    alert("Enter each details correctly");  
+    }  
+    else if(!letters.test(n))  
+            {  
+                alert('Name is incorrect must contain alphabets only');  
+            }  
+    else if (!email_val.test(e))  
+            {  
+                alert('Invalid email format please enter valid email id');  
+            }  
+    else{  
+    alert("Your query has been submitted successfully..!");  
+    }  
+    }  
+    </script> 
+
+</body>
+</html>
