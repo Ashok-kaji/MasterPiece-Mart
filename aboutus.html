@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+   
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#wrapper{
+    height: 100vh;
+    perspective: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.container1{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+
+}
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+    
+}
+section{
+    background-color:#423e31;
+    color: white;
+    padding: 5rem 0;
+}
+.bg1{
+    background-image: url(bg-1.jpeg);
+
+}
+.bg2{
+    background-image: url(grpphoto.jpeg);
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 0 10rem;
+    font-family: 'Pacifico', cursive;
+
+}
+.text{
+  
+    font-size: 2rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.text1{
+    color: burlywood;
+}
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+}
+.container2{
+    background-color: #0c2626;
+}
+.text2{
+    color: #8c4026;
+}
+.bg2{
+    background-image: url(image3.jpeg);
+}
+.bg3{
+    background-image: url(grppphoto.jpeg);
+}
+.container3{
+    background-color: #26260c;
+}
+.text4{
+    color: rgb(241, 241, 171)    ;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.fa-facebook-f{
+    background-image: url(Facebook-Logo.webp);
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container1">
+
+            <img src="main background.jpeg" class="background">
+            <img src="foreground (1).png" alt="" class="foreground">
+            
+
+        </div>
+        <section>
+            
+            <h1 >Good art brings people together</h1>
+       <p class="text text1">Welcome to Masterpiece Mart, where art meets passion and creativity knows no bounds. At Masterpiece Mart, we curate a symphony of artistic expressions, offering a diverse collection of captivating pieces that transcend time and captivate the soul. <br><br> Whether you're an art enthusiast seeking the perfect piece or an artist aiming to reach a global audience, Masterpiece Mart is your platform for creativity and connection.  </p>
+         <div class="bg bg1">
+           
+         </div>
+         <div class="container2">
+            <h1>Our Mission</h1>
+            <p class="text text2">At Masterpiece Mart, our mission is to be a catalyst for artistic discovery and expression. We strive to create a vibrant online platform that serves as a bridge between talented artists and passionate art enthusiasts. <br><br>We offer  a space where creativity knows no bounds, and every masterpiece finds its rightful place in the hearts and homes of art lovers worldwide. Join us on this journey of artistic discovery and expression.</p>
+            <div class="bg bg2">
+              
+            </div>  
+         </div>
+         <div class="container3">
+            <h1>Our Team</h1>
+            <p class="text text4">Our team works closely with our artists to ensure artworks are professionally constructed, priced consistently and listed with accurate information. We guarantee that every artwork is heirloom quality and arrives as described. <br><br>
+                We are more than just a group; we are a collective of individuals deeply passionate about art and committed to bringing a seamless and enjoyable e-commerce experience to our customers</p>
+            <div class="bg bg3">
+              
+            </div>  
+        </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">About s</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                           
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Order Status</a></li>
+                            <li><a href="#">Payment Options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Online Shop</h4>
+                        <ul>
+                            <li><a href="#">Modern Art</a></li>
+                            <li><a href="#">Canvases</a></li>
+                            <li><a href="#">Decor</a></li>
+                            <li><a href="#">Potraits</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="f"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+
+         </div>
+         
+        
+         
+         
+
+       
+       
+</body>
+</html>
