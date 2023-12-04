@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+                             /* navbar section */
+        .navbar {
+    height:75px;
+    background-color: #c3ced8;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-logo {                  /* navbar-logo */
+    height:55px ;
+    width: 300px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-logo a {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #24292f;
+}
+
+
+.shop-art {                 /* shop-art*/
+    height: 55px;
+    width: 100px;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.shop-art a {
+    text-decoration: none;
+    color: #24292f;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.shop-art a:hover {
+    font-size: 18px;
+}
+
+.search {                /* navbar-search */   
+    height: 40px;
+    width: 550px;
+    background-color: white;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.input-box {
+    height: 30px;
+    width: 90%;   
+    border: none;
+    font-size: 17px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.search-icon {
+    height: 30px;
+    width: 5%;
+   display: flex;
+   align-items: center;
+   font-size: 20px;
+   border: none;
+   color: black;
+}
+
+.search-icon:hover {
+    font-size: 25px;
+}
+
+.wishlist {               /* navbar-wishlist*/
+    height: 60px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wishlist a {
+    text-decoration: none;
+    color: #24292f;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.wishlist a:hover {
+    font-size: 20px;
+}
+
+.cart {                     /* navbar-cart*/
+    height: 60px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart a{
+    text-decoration: none;
+    color: #24292f;
+    font-size: 17px;
+    font-weight: 500;
+    
+}
+
+.cart a:hover {
+    font-size: 20px;
+}
+
+.login {                   /* navbar-login*/
+    height: 60px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login a {
+    text-decoration: none;
+    color: #24292f;
+    font-size: 17px;
+    font-weight: 500;
+}
+.login a:hover {
+    font-size: 20px;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .FAQ {
+            width: 100%;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq-item {
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        h1,
+        h2 {
+            color: #333333;
+            text-align: center;
+
+        }
+
+        h2:hover {
+            font-size: 28px;
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Comic Neue', cursive;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            background-color: #c3ced8;
+            padding: 150px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        h2 {
+            font-size: 24px;
+            cursor: pointer;
+            font-family: 'Roboto Condensed', sans-serif;
+            color: #555555;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666666;
+            line-height: 1.5;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+        .answer {
+            display: none;
+            
+        }
+        /* footer */
+.footbar {
+    height: 400px;
+    width: 90%;
+    background-color: #D4DADF;
+    margin: 10px auto;
+    display: flex;    
+}
+
+.description {
+    height:400px ;
+    width: 60%;
+}
+.foot-logo {
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2d2b2b;
+    
+}
+.foot-logo a {
+    text-decoration: none;
+    color: #2d2b2b;
+    font-size: 60px; 
+    font-family: 'Playfair Display', serif;
+    padding-top: 40px;
+}
+
+.desc {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.links {
+    height:400px ;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-left: 350px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #2d2b2b;
+    font-size: 17px;
+}
+
+.links a:hover {
+    font-size:21px ;
+    text-decoration: underline;
+}
+
+.end {
+    height: 200px;
+    width: 90%;
+    background-color: #092933;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.end-content {
+    height: 200px;
+    width: auto;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+.end a {
+    color: white;
+    font-size: 20px;
+    transition: font-size 0.4s ease-in-out 0s;
+    text-decoration: none;
+}
+.end a:hover {
+    font-size: 25px;
+}
+    </style>
+</head>
+
+<body>
+    <header>
+                                              <!-- navbar section -->
+
+      <div class="navbar">
+        <div class="nav-logo"><a href="Index.html">MasterPiece Mart</a></div>
+
+        <div class="search">
+          <input class="input-box" placeholder="Search MasterPiece Mart" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+
+        <div class="shop-art"><a href="#"> Shop Art</a></div>
+
+        <div class="wishlist"><a href="#">Wishlist</a></div>
+
+        <div class="cart">
+          <a href="#"> Cart <i class="fa-solid fa-cart-shopping"></i> </a>
+        </div>
+
+        <div class="login">
+          <a href="loginpage.html">Login</a> <i class="fa-solid fa-user"></i>
+        </div>
+      </div>
+    </header>
+    <h1>Frequently Asked Questions</h1>
+    <div class="container">
+        <div class="image">
+            <img width="600px" src="Frequently Asked Questions.png" alt="FAQ">
+        </div>
+        <div class="FAQ">
+            <div class="faq-item btn btn-outline-light">
+                <h2>General</h2>
+                <div class="answer">
+                    <p><strong>What is Masterpiece Mart?</strong></p>
+                    <p>Masterpiece Mart is an online art gallery that offers a wide selection of original artworks,
+                        including paintings, photography, and sculptures. Shop for unique pieces and support talented
+                        artists on our e-commerce platform. Transform your living space and immerse yourself in the
+                        world of
+                        creativity, all from the comfort of your home.</p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Art Categories</h2>
+                <div class="answer">
+                    <p><strong>What are the main categories of art on Masterpiece Mart?</strong></p>
+                    <p>Masterpiece Mart offers a variety of art categories, including paintings and photography.</p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Purchasing</h2>
+                <div class="answer">
+                    <p><strong>Once I purchase a piece of art, how many days will it take to arrive?</strong></p>
+                    <p>Artwork is typically shipped within seven to ten business days. Once your artwork is shipped,
+                        please
+                        allow three to six more business days. You will receive an email with a tracking number so that
+                        you
+                        can see exactly when your art will arrive. If you need artwork delivered on a tight deadline,
+                        please
+                        contact us before placing your order at info@masterpiecemart.com so that we can arrange
+                        expedited
+                        shipping.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Shipping</h2>
+                <div class="answer">
+                    <p><strong>How do you ship artwork?</strong></p>
+                    <p>All artwork is packaged in custom built art boxes to insure safe delivery. Our boxes are lined
+                        with
+                        high density foam to protect your art. The foam construction also makes unpackaging quick and
+                        easy -
+                        no packing peanuts, no mess. We send art via FedEx, UPS and other common carriers. All artwork
+                        is
+                        shipped fully insured. Please note, a signature is not required for delivery unless you request
+                        that
+                        your art be delivered with a signature.</p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Artwork Care</h2>
+                <div class="answer">
+                    <p><strong>How should I care for the art I purchase from Masterpiece Mart?</strong></p>
+                    <p>We recommend displaying your artwork in a location that is away from direct sunlight and extreme
+                        temperatures. You should also avoid hanging the artwork in a humid environment, such as a
+                        bathroom.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Returns and Refunds</h2>
+                <div class="answer">
+                    <p><strong>May I return a piece of artwork if it does not meet my expectations?</strong></p>
+                    <p>We want you to love your new art, so if a piece doesn't quite work in your space, return it
+                        within
+                        seven days of receiving your order and we'll issue you a refund for the price of the art. Art
+                        must
+                        be returned in its original packaging. We will pay for return shipping on pieces measuring up to
+                        50
+                        inches on the longest side. For artwork longer than 50 inches, we'll issue you a refund on the
+                        price
+                        of the art minus a return shipping fee of $300. For orders shipped outside of the contiguous
+                        United
+                        States, you are responsible for the cost of return shipping and any customs and brokerage fees
+                        charged upon return. At this time, there are no returns on special orders or artwork that is
+                        altered
+                        at the request of the customer.</p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Artists and Artwork Submissions</h2>
+                <div class="answer">
+                    <p><strong>How can I submit my artwork to Masterpiece Mart?</strong></p>
+                    <p>If you are an artist interested in submitting your artwork to Masterpiece Mart, please visit our
+                        "Artist Submissions" page for more information.</p>
+                </div>
+            </div>
+
+            <div class="faq-item btn btn-outline-light">
+                <h2>Account and Billing</h2>
+                <div class="answer">
+                    <p><strong>How do I update my billing information?</strong></p>
+                    <p>You can update your billing information by logging into your account and visiting the "Billing"
+                        section.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footbar">
+          <div class="description">
+            <div class="foot-logo"><a href="Index.html ">MasterPiece Mart</a></div>
+            <div class="desc">Masterpiece Mart is an online art gallery with a curated selection of original art for sale. Shop thousands of oil paintings, acrylics, watercolor paintings, mixed media art, and more. Contact us for a free art advisor consultation, and we’ll be happy to help you find your ideal artwork.</div>
+          </div>
+
+          <div class="links">
+
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Returns</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Team Wizard</a>
+
+          </div>
+        </div>
+        <hr>
+                                                   <!-- 2nd footer section -->
+        <div class="end">
+          <div class="end-content"> <br><br>PHONE <br> <br><br> 8825******</div>
+          <div class="end-content">  <br><br>EMAIL <br><br><br> teamwizard@pvt.ltd.in</div>
+          <div class="end-content"> SOCIAL MEDIA <br> <br> <a href="https://www.instagram.com/muskan_arts_0/?hl=en"><i class="fa-brands fa-instagram"></i></a> <br> <br> <a href="#"><i class="fa-brands fa-telegram"></i></a> <br><br> <a href="https://www.youtube.com/@muskanart3102"><i class="fa-brands fa-youtube"></i></a></div>
+          <div class="end-content">    </BR><a href="#">TERMS</a> <BR><BR> </BR> <a href="#">PRIVACY</a></div>
+          <div class="end-content"> <br><br><br> Copyright &#169; 2023</div>
+        </div>
+
+      </footer>
+    <script>
+        // JavaScript code to toggle answer visibility
+        document.addEventListener('DOMContentLoaded', function () {
+            const questions = document.querySelectorAll('h2');
+            questions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    if (answer.style.display === 'block') {
+                        answer.style.display = 'none';
+                    } else {
+                        answer.style.display = 'block';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
